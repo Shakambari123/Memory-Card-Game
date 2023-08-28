@@ -47,6 +47,8 @@ body{
 }
 .card.shake{
   animation: shake 0.35s ease-in-out;
+/*   0.35s: This value indicates the duration of the animation. The animation will last for 0.35 seconds. */
+/*   ease-in-out: This is a common timing function that combines both ease-in and ease-out functions. It starts slowly, accelerates in the middle of the animation, and then slows down again at the end. It creates a smooth and balanced motion, often perceived as natural and pleasing to the eye. */
 }
 @keyframes shake {
   0%, 100%{
@@ -73,8 +75,10 @@ body{
   position: absolute;
   background: #fff;
   border-radius: 27px;
+/*   The higher the value, the more rounded the corners will appear. */
   backface-visibility: hidden;
   transition: transform 0.25s linear;
+/*   This means that when the "transform" property changes, such as through a CSS animation or JavaScript manipulation, the change will be animated smoothly over the specified time. */
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 .card .front-view img{
@@ -82,6 +86,7 @@ body{
 }
 .card .back-view{
   transform: rotateY(-180deg);
+/*   The CSS property rotateY is used to rotate an element around its vertical axis. The value -180deg indicates a rotation angle of -180 degrees, which means the element will be flipped horizontally. */
 }
 .card .back-view img{
   max-width: 40px;
