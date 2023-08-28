@@ -21,6 +21,7 @@ function initTimer() {
 }
 
 function flipCard({target: clickedCard}) {
+    //The function flipCard is defined with a parameter using object destructuring. The parameter is an object with a property named target, and its value is assigned to the variable clickedCard. This function is likely used as an event handler for a card flip action.
     if(!isPlaying) {
         isPlaying = true;
         timer = setInterval(initTimer, 1000);
@@ -83,7 +84,7 @@ function shuffleCard() {
 
     let arr = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
     arr.sort(() => Math.random() > 0.5 ? 1 : -1);
-
+//if the random returns 1 i.e greater than 0.5,then then we swap else we dont
     cards.forEach((card, index) => {
         card.classList.remove("flip");
         let imgTag = card.querySelector(".back-view img");
@@ -92,6 +93,12 @@ function shuffleCard() {
         
         card.addEventListener("click", flipCard);
     });
+    //The meaning of above forEach loop
+//     for (let i = 0; i < cards.length; i++) {
+//   const card = cards[i];
+//   card.addEventListener("click", flipCard);
+// }
+
 }
 
 shuffleCard();
