@@ -16,7 +16,7 @@ body{
   min-height: 100vh;
   background: #6563ff;
 }
-<!--selection  is a pseudo-element selector that targets the selected text in a web page. When you select text on a web page by clicking and dragging your mouse, this selector is applied to the selected portion of the text.-->
+/*selection  is a pseudo-element selector that targets the selected text in a web page.When you select text on a web page by clicking and dragging your mouse, this selector is applied to the selected portion of the text.*/
 ::selection{
   color: #fff;
   background: #6563ff;
